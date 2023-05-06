@@ -50,7 +50,7 @@ jobs:
                   SecurityGroupIds:
                     - !Ref SecurityGroup
                   SubnetId: !Ref SubnetId
-        with:
+        
           parameters: |
             {
               "InstanceType": "t2.micro",
