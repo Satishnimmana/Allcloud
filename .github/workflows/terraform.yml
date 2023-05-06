@@ -17,9 +17,9 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ap-south-1
 
-      - name: Create CloudFormation Stack
-      #  uses: aws-actions/amazon-cloudformation-action@v1
-        with:
+    #  - name: Create CloudFormation Stack
+    #   uses: aws-actions/amazon-cloudformation-action@v1
+       with:
           stack-name: my-ec2-instance
           template-body: |
             ---
